@@ -9,9 +9,28 @@
    
 
 
+## For Bootstrap:
+1. **npm install --save bootstrap@3**  // to install locally in the project
+2. In 'sngular.json' add bootstrap part as below: 
+   "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+3. Run: **ng serve** to load new configuration.
 
-
-
+## creating component with CLI and nesting component:
+1. **ng generate component component-name** OR **ng g c component-name** e.g. ng g c servers
+2. In html file of new component, here servers: have two : <app-server></app-server>
+<app-server></app-server>
+3. Make sure if app.module.ts is updated with possible imports for new components in declarations section.
+4. In app.component.html file : <app-servers></app-servers>
+5. and run : **ng serve**
+6. Inspect the browser in developer tools, you will see something like below: 
+   <app-servers>
+      <app-server></app-server>
+      <app-server></app-server>
+   </app-servers>
+7. 
 
 --
 
