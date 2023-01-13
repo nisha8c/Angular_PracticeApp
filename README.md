@@ -1,5 +1,20 @@
 # MyFirstAngularProjectUdemy
 
+## Details:
+1. Upadated node version
+2. Installed : **npm install -g @angular/cli**
+3. **ng new project-name**
+4. **cd project-name**
+5. To run app: **ng serve**
+   
+
+
+
+
+
+
+--
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
 
 ## Development server
