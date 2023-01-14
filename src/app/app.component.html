@@ -9,3 +9,30 @@
     </div>
 </div>
 
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Assignment from Udemy</h2>
+            <label>Username: </label>
+            <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="username"
+            >
+            <!--For ngModel to work, make sure you have FormsModule imported in app.module.ts-->
+            <p>{{ username }}</p>
+
+            <button
+                class="btn btn-primary"
+                [disabled]="username === ''"
+                (click)="username = ''"
+            >
+                Reset User
+            </button>
+
+        </div>
+    </div>
+</div>
+
+

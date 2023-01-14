@@ -41,4 +41,23 @@
     [(ngModel)]="serverName"
 >
 
+<hr><hr>
+
+<!--Combining all forms of data-binding-->
+<label>Combining all forms of data-binding</label>
+<input
+    type="text"
+    class="form-control"
+    [(ngModel)]="serverName"
+>
+
+<button
+    class="btn btn-primary"
+    [disabled]="!allowNewServer"
+    (click)="onCreateServer()"
+    >Add Server</button>
+
+    <!--Event Binding on line 15 - click-->
+<p>{{ serverCreationStatus }}</p>
+
 

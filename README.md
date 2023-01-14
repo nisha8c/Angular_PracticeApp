@@ -70,13 +70,13 @@ It is like communication between Typescript code (business logic) and Template (
 Ability to provide dynamic content.
 
 -> It can be done with:
-**OUTPUT DATA** i.e from TS to HTML
+**A**: **OUTPUT DATA** i.e from TS to HTML
 1. **String interpolation**:
    {{ data }}
 2. **Property Binding**:
    [property] = "data"
 
-**React to user events**  i.e. from HTML to TS
+**B**: **React to user events**  i.e. from HTML to TS
 1. **Event Binding**:
    (event) = "click"
 
@@ -85,6 +85,8 @@ COMBINATION OF A AND B ABOVE:
 i.e. two way binding.
 
 [(ngModel)] = "data"
+
+check line 121 in this ReadMe
 
 
 ## Property binding vs String Interpolation
@@ -121,7 +123,13 @@ Check line 41 in servers.component.html
 [(ngModel)]="serverName"
 above syntax has [] for property and () for event.
 
-## Combining all form s of data-binding.
+## Combining all forms of data-binding.
+check code from line 46 to 61 from dervers.componet.html.
+
+## Udemy Assignment on all forms of data  binding
+Check code from line 13 to 36 in app.component.html
+
+
 
 
 
