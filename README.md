@@ -104,6 +104,46 @@ Important: For events, you don't bind to onclick but only to click (=> (click)).
 The MDN (Mozilla Developer Network) offers nice lists of all properties and events of the element you're interested in. Googling for YOUR_ELEMENT properties  or YOUR_ELEMENT events  should yield nice results.
 
 ## Passing and using data with event binding.
+**Check** : onUpdateServerName in servers.component.ts file
+and input event on line 29 in respective html file.
+
+
+**Important**: FormsModule is Required for **Two-Way-Binding**!
+Important: For Two-Way-Binding (covered in the next lecture) to work, you need to enable the ngModel  directive. This is done by adding the FormsModule  to the imports[]  array in the AppModule.
+
+You then also need to add the import from @angular/forms  in the app.module.ts file:
+
+import { FormsModule } from '@angular/forms'; 
+
+
+## Two way data binding : event + property binding
+Check line 41 in servers.component.html
+[(ngModel)]="serverName"
+above syntax has [] for property and () for event.
+
+## Combining all form s of data-binding.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 --
 

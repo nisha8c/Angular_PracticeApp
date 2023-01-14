@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class ServersComponent {
   allowNewServer: boolean = false;
   serverCreationStatus: string = 'No server was created.';
+  serverName: string = '';
 
 
   constructor() {
@@ -18,6 +19,11 @@ export class ServersComponent {
 
   onCreateServer() {
     this.serverCreationStatus = 'Server was Created.';
+  }
+
+  onUpdateServerName(event: Event) {
+    console.log('Input event: ', event);
+    this.serverName = (<HTMLInputElement>event.target).value;
   }
 
 }

@@ -18,3 +18,27 @@
     <!--Event Binding on line 15 - click-->
 <p>{{ serverCreationStatus }}</p>
 
+
+<hr>
+
+<!--Passing and using data with event binding-->
+<label>Server Name: Event Binding Example</label>
+<input
+    type="text"
+    class="form-control"
+    (input)="onUpdateServerName($event)"
+>
+<p>{{ serverName }}</p>
+
+
+<!--Two way data binding 
+## Two way data binding : event + property binding
+-->
+<label>Server Name: Two way Binding Example</label>
+<input
+    type="text"
+    class="form-control"
+    [(ngModel)]="serverName"
+>
+
+
