@@ -18,7 +18,7 @@
             ],
 3. Run: **ng serve** to load new configuration.
 
-## creating component with CLI and nesting component:
+## Creating component with CLI and nesting component:
 1. **ng generate component component-name** OR **ng g c component-name** e.g. ng g c servers
 2. In html file of new component, here servers: have two : <app-server></app-server>
 <app-server></app-server>
@@ -30,7 +30,40 @@
       <app-server></app-server>
       <app-server></app-server>
    </app-servers>
-7. 
+
+## Working with component templates: 
+i.e. Instead of using external template file e.g. server.component.html in this example, you can also use inline template, which means you define HTML code in typescript code.
+
+1. go in servers.component.ts and instead of 'templateUrl', make it 'template'
+   i.e. change templateUrl: './servers.component.html'
+   to template: '<app-server></app-server>'
+   or template: '<app-server></app-server><app-server></app-server>', without wrapping as it is not supported format with wrappping.
+2. ng serve
+3. For wrapping the template html code write it in backticks instead of single quotes.
+   template: `
+    <app-server></app-server>
+    <app-server></app-server>`,
+
+    *********** **But using external templates is good in case of multiple lines of html code**.
+
+## Working with component styles:
+Stules and Inline styles:
+### Both styleUrls and styles are arrays.
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  // styleUrls: ['./app.component.css']
+  styles: [`
+  h1 {
+    color: red;
+  }
+  `]
+})
+
+
+## Understanding the component Selector.
+
 
 --
 
