@@ -87,6 +87,12 @@ i.e. two way binding.
 [(ngModel)] = "data"
 
 
+## Property binding vs String Interpolation
+1. If you want to print something in your template : user sting interpolation
+2. If you want to change some property of an HTML element or component, use property binding.
+
+
+## EVENT Binding
 
 
 --

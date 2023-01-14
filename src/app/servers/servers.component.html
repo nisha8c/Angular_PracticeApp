@@ -3,10 +3,18 @@
 <app-server></app-server>
 <app-warning-alert></app-warning-alert>
 <app-success-alert></app-success-alert>
+<hr>
 
+<p>Allow adding new server? {{ allowNewServer }}</p> <!--string interpolation-->
+<p [innerText]="allowNewServer">Allow adding new server?</p> <!--poperty binding-->
 
 <!--Property Binding-->
 <button
     class="btn btn-primary"
     [disabled]="!allowNewServer"
+    (click)="onCreateServer()"
     >Add Server</button>
+
+    <!--Event Binding on line 15 - click-->
+<p>{{ serverCreationStatus }}</p>
+
