@@ -63,13 +63,37 @@ Stules and Inline styles:
 
 
 ## Understanding the component Selector.
+It needs to be unique for every component.
+
+## What is data-binding?
+It is like communication between Typescript code (business logic) and Template (HTML pages).
+Ability to provide dynamic content.
+
+-> It can be done with:
+**OUTPUT DATA** i.e from TS to HTML
+1. **String interpolation**:
+   {{ data }}
+2. **Property Binding**:
+   [property] = "data"
+
+**React to user events**  i.e. from HTML to TS
+1. **Event Binding**:
+   (event) = "click"
+
+## A: ONE ADDITIONAL WAY OF DATA BINDING:
+COMBINATION OF A AND B ABOVE:
+i.e. two way binding.
+
+[(ngModel)] = "data"
+
+
 
 
 --
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
 
-## Development server
+## B: Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
