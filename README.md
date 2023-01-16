@@ -31,6 +31,7 @@
       <app-server></app-server>
    </app-servers>
 
+
 ## Working with component templates: 
 i.e. Instead of using external template file e.g. server.component.html in this example, you can also use inline template, which means you define HTML code in typescript code.
 
@@ -45,6 +46,7 @@ i.e. Instead of using external template file e.g. server.component.html in this 
     <app-server></app-server>`,
 
     *********** **But using external templates is good in case of multiple lines of html code**.
+
 
 ## Working with component styles:
 Stules and Inline styles:
@@ -64,6 +66,7 @@ Stules and Inline styles:
 
 ## Understanding the component Selector.
 It needs to be unique for every component.
+
 
 ## What is data-binding?
 It is like communication between Typescript code (business logic) and Template (HTML pages).
@@ -129,6 +132,12 @@ check code from line 46 to 61 from dervers.componet.html.
 ## Udemy Assignment on all forms of data  binding
 Check code from line 13 to 36 in app.component.html
 
+## What are directives:
+Directives are instructions in the DOM.
+
+## Using nglf to output data conditionally.
+line #65 to 68 in servers.component.html. 
+* is required, that indicates that it is structural directive.
 
 
 
@@ -153,8 +162,9 @@ Check code from line 13 to 36 in app.component.html
 
 
 
---
 
+
+## --**README FROM DEFAULT PROJECT CREATE**:
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
 
 ## B: Development server
