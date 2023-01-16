@@ -135,9 +135,14 @@ Check code from line 13 to 36 in app.component.html
 ## What are directives:
 Directives are instructions in the DOM.
 
-## Using nglf to output data conditionally.
+### Using nglf to output data conditionally.
 line #65 to 68 in servers.component.html. 
 * is required, that indicates that it is structural directive.
+
+### Styling elements dynamically with ngStyle:
+ngStyle:  server.component.html
+
+
 
 
 

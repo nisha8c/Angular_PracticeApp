@@ -3,4 +3,6 @@
 <!--
     String interpolation. Check server.component.ts file as well
 -->
-<p>Server with ID {{ serverId }} and is: {{ getServerStatus() }}</p>
+<p [ngStyle]="{backgroundColor: getColor()}">
+    Server with ID {{ serverId }} and is: {{ getServerStatus() }}
+</p>
