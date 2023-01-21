@@ -83,7 +83,7 @@ Ability to provide dynamic content.
 1. **Event Binding**:
    (event) = "click"
 
-## A: ONE ADDITIONAL WAY OF DATA BINDING:
+## ONE ADDITIONAL WAY OF DATA BINDING:
 COMBINATION OF A AND B ABOVE:
 i.e. two way binding.
 
@@ -141,6 +141,16 @@ line #65 to 68 in servers.component.html.
 
 ### Styling elements dynamically with ngStyle:
 ngStyle:  server.component.html
+
+### Applying css classes dynamically with ngClass
+Line 7 in server.component.html and line 7 to 11 in respective ts file. It adds class 'online' to p , only when serverstatus is online.
+
+### Outputting Lists with ngFor:
+### getting index while using ngFor:
+
+
+
+
 
 
 
